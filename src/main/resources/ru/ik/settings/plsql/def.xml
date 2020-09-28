@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql_expr_list>
+    <expression name="SaveSettings" lang = "PL/SQL">
+        <script><![CDATA[
+        BEGIN
+        update XXI.ik_nlg_prop a set a.input_dir = :inpur_dir, a.output_dir = :output_dir, a.xsd_dir = :xsd_dir, a.arch_dir = :arch_dir WHERE a.id = 0;
+        COMMIT;
+        END;
+
+]]></script>
+        <parameters/>
+    </expression>
+</sql_expr_list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import ru.inversion.fx.form.controls.JInvButton?>
+<?import ru.inversion.fx.form.controls.JInvLabel?>
+<?import ru.inversion.fx.form.controls.JInvTextField?>
+<?import ru.inversion.fx.form.controls.JInvToolBar?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ik.settings.SettingsViewController">
+   <children>
+      <GridPane layoutX="26.0" layoutY="110.0" prefHeight="120.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JInvLabel text="%INPUT_DIR" />
+            <JInvLabel text="%OUTPUT_DIR" GridPane.rowIndex="1" />
+             <JInvLabel text="%ARCH_DIR" GridPane.rowIndex="2" />
+            <JInvLabel text="%XSD_DIR" GridPane.rowIndex="3" />
+            <JInvTextField fx:id="INPUT_DIR" GridPane.columnIndex="1" />
+            <JInvTextField fx:id="OUTPUT_DIR" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JInvTextField fx:id="ARCH_DIR" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JInvTextField fx:id="XSD_DIR" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <JInvToolBar layoutX="60.0" layoutY="324.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0">
+         <items>
+            <JInvButton fx:id="btOK" text="%EDIT.OK" />
+            <JInvButton fx:id="btCancel" text="%EDIT.CANCEL" />
+         </items>
+      </JInvToolBar>
+   </children>
+</AnchorPane>
