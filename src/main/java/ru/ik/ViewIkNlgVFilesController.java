@@ -14,7 +14,6 @@ import ru.inversion.fx.form.controls.table.toolbar.AggregatorType;
 
 import ru.inversion.fx.form.*;
 import ru.inversion.fx.form.controls.*;
-import ru.inversion.fxadm.App;
 import ru.inversion.icons.enums.FontAwesome;
 
 import java.io.File;
@@ -43,7 +42,7 @@ public class ViewIkNlgVFilesController extends JInvFXBrowserController
     protected void init() throws Exception
     {
 
-        setTitle (getBundleString ("VIEW.TITLE" /*+ utils.getVersion()*/));
+        setTitle (getBundleString ("VIEW.TITLE")  + "   " + utils.getVersion());
         initDataSet ();
         DSFXAdapter<PIkNlgVFiles> dsfx = DSFXAdapter.bind (dsIK_NLG_V_FILES, IK_NLG_V_FILES, null, true); 
 
