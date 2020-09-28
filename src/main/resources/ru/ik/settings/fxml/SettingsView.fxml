@@ -26,7 +26,7 @@
             <JInvLabel text="%INPUT_DIR" />
             <JInvLabel text="%OUTPUT_DIR" GridPane.rowIndex="1" />
              <JInvLabel text="%ARCH_DIR" GridPane.rowIndex="2" />
-            <JInvLabel text="%XSD_DIR" GridPane.rowIndex="3" />
+             <JInvLabel text="%XSD_DIR" GridPane.rowIndex="3" />
             <JInvTextField fx:id="INPUT_DIR" GridPane.columnIndex="1" />
             <JInvTextField fx:id="OUTPUT_DIR" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <JInvTextField fx:id="ARCH_DIR" GridPane.columnIndex="1" GridPane.rowIndex="2" />
